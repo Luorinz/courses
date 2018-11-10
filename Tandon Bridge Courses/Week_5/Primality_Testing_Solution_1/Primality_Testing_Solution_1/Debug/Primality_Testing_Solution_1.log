@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  Primality_Testing_Solution_1.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_5\primality_testing_solution_1\primality_testing_solution_1\primality_testing_solution_1.cpp(9): error C2601: “isPrime”: 本地函数定义是非法的
+  c:\users\luori\desktop\courses\tandon bridge courses\week_5\primality_testing_solution_1\primality_testing_solution_1\primality_testing_solution_1.cpp(7): note: 此行有一个“{”没有匹配项

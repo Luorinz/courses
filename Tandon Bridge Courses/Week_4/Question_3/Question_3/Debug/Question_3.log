@@ -1,0 +1,3 @@
+﻿  Question_3.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_4\question_3\question_3\question_3.cpp(26): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  Question_3.vcxproj -> C:\Users\Luori\Desktop\Courses\Tandon Bridge Courses\Week_4\Question_3\Debug\Question_3.exe

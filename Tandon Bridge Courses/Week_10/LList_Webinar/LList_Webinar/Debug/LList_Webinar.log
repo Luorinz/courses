@@ -1,0 +1,4 @@
+﻿  LList_Webinar.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_10\llist_webinar\llist_webinar\llist_webinar.cpp(11): error C2027: 使用了未定义类型“Thing”
+  c:\users\luori\desktop\courses\tandon bridge courses\week_10\llist_webinar\llist_webinar\llist_webinar.cpp(9): note: 参见“Thing”的声明
+c:\users\luori\desktop\courses\tandon bridge courses\week_10\llist_webinar\llist_webinar\llist_webinar.cpp(11): error C2228: “.x”的左边必须有类/结构/联合

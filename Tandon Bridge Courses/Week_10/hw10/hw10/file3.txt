@@ -1,0 +1,12 @@
+ *********Payroll Information********
+ Anda Luo, $22000
+ Young Money, $6141.5
+ Aaron Abrahim, $754
+ Lonely Island, $564.2
+ John F. Jones, $270
+ Lil Wayne, $246
+ Daniel Katz, $210
+ Koby Bean Bryant, $190.4
+ Crazy Dave, $165
+ Wonderful world, $145.5
+*********End payroll**************

@@ -1,0 +1,5 @@
+print("Name:\tAnda luo\n")
+print("Birthday:\t06/07/1996")
+print("Hobby:\tbasketball")
+print("Favorite book:\tThe Ideal City")
+print("Favorite movie:\tStarship Trooper")

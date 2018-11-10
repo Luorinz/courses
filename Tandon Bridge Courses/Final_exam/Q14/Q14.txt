@@ -1,0 +1,137 @@
+#include <iostream>
+using namespace std;
+
+template <class T>
+class LList;
+template <class T>
+class LListNode {
+	T data;
+	LListNode<T>* next;
+public:
+	LListNode(const T& item = T(), LListNode<T>* newnext = nullptr) {
+		data = item;
+		next = newnext;
+	}
+	friend class LList < T >;
+};
+template <class T>
+class LList {
+	LListNode<T>* head;
+	//LListNode<T>* recursiveCopy(LListNode<T>* rhsHead) 
+public:
+	LList() :head(nullptr) {}
+	~LList() { clear(); }
+	LList(const LList<T>& rhs) :head(nullptr) { *this = rhs; }
+	LList& operator=(const LList& rhs) {
+		LListNode<T>* currNode = rhs.head;
+		while (currNode->next != nullptr)
+		{
+			this->insertAtEnd(currNode->data);
+			currNode = currNode->next;
+		}
+		this->insertAtEnd(currNode->data);	
+		return *this;
+	}
+	void insertAtHead(const T& item) {
+		LListNode<T>* newNode = new LListNode<T>(item, this->head);
+		this->head = newNode;
+	}
+	void insertAtEnd(const T& item) {
+		LListNode<T>* newNode = new LListNode<T>(item,nullptr);
+		LListNode<T>* currNode = this->head;
+		if (currNode == nullptr)
+		{
+			this->head = newNode;
+		}
+		else {
+			while (currNode->next != nullptr) {
+				currNode = currNode->next;
+			}
+			currNode->next = newNode;
+		}
+		
+	}
+	T removeFromHead() {
+		T dataRemoved = this->head->data;
+		this->head = this->head->next;
+		return dataRemoved;
+	}
+	bool isEmpty() { return head == nullptr; }
+	void clear() { while (!isEmpty()) removeFromHead(); }
+	int size()const{
+		int count = 0 ;
+		LListNode<T>* currNode = this->head;
+		while (currNode != nullptr) {
+			count++;
+			currNode = currNode->next;
+		}
+		return count;
+	}	
+	LList<T>* operator+( LList<T>* other);
+};
+
+template <class T>
+LList<T>* LList<T>::operator+(LList<T>* other) {
+	LList<T>* newList = new LList<T>;
+	int count=0;
+	int totalSize = other.size() + this.size();
+	LListNode* currNode = this->head;
+	for (int i = 0; i < totalSize; i++)
+	{
+		if (count == this->size())
+		{
+			currNode = other->head;
+		}
+		newList.insertAtHead(currNode.data);
+		currNode = currNode->next;
+		count++;
+	}
+
+	return newList;
+}
+
+
+int main()
+{
+
+	LList<int> listA;
+	LList<int> listB;
+	LList<int> merge ;
+
+
+	int a = 5;
+	int b = 99999;
+
+	//test for insertAtHead
+	for (int i = 0; i < 10; i++)
+	{
+		listA.insertAtHead(a);	
+		a++;
+	}
+
+	//test for removeFromHead
+	for (int i = 0; i < 5; i++)
+	{
+		cout<<listA.removeFromHead()<<endl;
+	}
+
+	//test for insertAtEnd
+	for (int i = 0; i < 5; i++)
+	{
+		listB.insertAtEnd(b);
+		b--;
+	}
+
+	//test for operator+
+	merge = listA + listB;
+
+	//test for size()
+	/*
+	int b = newList.size();
+	cout << b << endl;
+	*/
+
+
+    return 0;
+}
+

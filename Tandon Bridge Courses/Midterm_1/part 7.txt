@@ -1,0 +1,51 @@
+Write your code here. 
+Make sure to upload your file.
+
+#include <iostream>>
+using namespace std;
+
+int main(){
+  //input and processing
+  int numOfSeq;
+  int currSeq= 1;
+  int currNum;
+  int numOfMembers;
+  int currSum;
+  int greatestSeq = 0;
+  double currAverage = 0,greatestAverage = 0;
+  bool endInput;
+
+  cout << "How many sequences do you wish to enter?\n";
+  cin >> numOfSeq;
+  cout << "Please enter "<< numOfSeq <<" lines, each with a non-empty sequence of positive integers. For each sequence, separate the elements by a space, and end it by typing -1:\n";
+  while(currSeq <= numOfSeq){
+    endInput = false;
+    numOfMembers = 0;
+    currSum = 0;
+    while(endInput = false){
+      cin >> currNum;
+      if(currNum == -1){
+        endInput = true;
+      }
+      else{
+        numOfMembers++;
+        currSum = currSum + currNum;
+      }   
+    }
+    if(numOfMembers != 0){
+      currAverage = (double)currSum / numOfMembers;
+    }
+    if (currAverage > greatestAverage){
+      greatestAverage = currAverage;
+      greatestSeq = currSeq;
+    }
+    currSeq++;
+  }
+  
+
+  //output
+  cout << "The sequence in line "<<greatestSeq<<" has the greatest average\n";
+
+
+  return 0;
+}

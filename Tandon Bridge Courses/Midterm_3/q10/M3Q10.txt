@@ -1,0 +1,63 @@
+We've been asked to design a class for a bank.  Banks have different types of accounts.  
+
+All accounts have an account number (int) and balance (double), both of which must be private.  The account construtor requires the account number and this can never be changed.   All accounts must have an accessor method (getter) for the account number.  All must have a deposit and withdraw function which will change the balance accordingly.  All accounts will have a "monthly" function though what that function does is different for each different type of account.  We will never create a "generic" account, only the types below will be created.
+Accounts will differ based on their type as follows:
+
+Checking accounts do not earn interest and are only charged a $10 fee each month if the balance is below $5000.  Checking accounts must never allow a withdraw to cause the balance to go negative; if a withdraw exceeds the balance, simply do nothing.
+
+CreditCard accounts are charged 1.5% interest on the balance each month.  This interest is then added to the balance.  Our credit cards have no limits, so you do not need to worry about that.
+
+Please create all three classes above, as described.
+
+class Account
+{
+	int accountNum;
+	double	 balance;
+
+public:
+	Account(int newNum=0, double newBalance=0) :accountNum(newNum), balance(newBalance) {}
+	void setAccount(int num) { accountNum = num; }
+
+	int getAccount() { return accountNum; }
+	int getBalance() { return balance; }
+	void deposit(double num) { balance += num; }
+	virtual void withdraw(double num) { balance -= num; }
+	
+	virtual void monthly() = 0 {};
+
+
+};
+
+class checking : public Account {
+	checking(int num) { this->setAccount(num); }
+	void withdraw(double num) {
+		if ((this->getBalance())>= num)
+		{
+			this->withdraw(num);
+		}
+	}
+	void monthly()  {
+		if ((this->getBalance() )< 5000)
+		{
+			if ((this->getBalance()) - 10 >= 0)
+			{
+				this->withdraw(10);
+
+			}
+			else
+				this->withdraw(this->getBalance());
+
+		}
+
+
+	}
+};
+
+class creditCard : public Account {
+	creditCard(int num) { this->setAccount(num); }
+
+	void monthly() {
+		this->deposit(this->getBalance() * 0.015);
+	}
+
+};

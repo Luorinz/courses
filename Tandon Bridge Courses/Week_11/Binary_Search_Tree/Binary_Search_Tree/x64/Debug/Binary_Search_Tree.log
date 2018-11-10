@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  Binary_Search_Tree.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_11\binary_search_tree\binary_search_tree\binary_search_tree.cpp(252): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+c:\users\luori\desktop\courses\tandon bridge courses\week_11\binary_search_tree\binary_search_tree\binary_search_tree.cpp(87): warning C4554: “&”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+  c:\users\luori\desktop\courses\tandon bridge courses\week_11\binary_search_tree\binary_search_tree\binary_search_tree.cpp(82): note: 编译 类 模板 成员函数 "void BST<int>::remove(BSTNode<T> *)" 时
+          with
+          [
+              T=int
+          ]
+  c:\users\luori\desktop\courses\tandon bridge courses\week_11\binary_search_tree\binary_search_tree\binary_search_tree.cpp(38): note: 参见对正在编译的函数 模板 实例化“void BST<int>::remove(BSTNode<T> *)”的引用
+          with
+          [
+              T=int
+          ]
+  c:\users\luori\desktop\courses\tandon bridge courses\week_11\binary_search_tree\binary_search_tree\binary_search_tree.cpp(251): note: 参见对正在编译的 类 模板 实例化 "BST<int>" 的引用
+  Binary_Search_Tree.vcxproj -> C:\Users\Luori\Desktop\Courses\Tandon Bridge Courses\Week_11\Binary_Search_Tree\x64\Debug\Binary_Search_Tree.exe

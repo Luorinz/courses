@@ -1,0 +1,5 @@
+﻿  al6025_hw7_q2.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_7\al6025_hw7_q2\al6025_hw7_q2\al6025_hw7_q2.cpp(43): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\luori\desktop\courses\tandon bridge courses\week_7\al6025_hw7_q2\al6025_hw7_q2\al6025_hw7_q2.cpp(45): warning C4554: “&”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+c:\users\luori\desktop\courses\tandon bridge courses\week_7\al6025_hw7_q2\al6025_hw7_q2\al6025_hw7_q2.cpp(49): warning C4554: “&”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+  al6025_hw7_q2.vcxproj -> C:\Users\Luori\Desktop\Courses\Tandon Bridge Courses\Week_7\al6025_hw7_q2\Debug\al6025_hw7_q2.exe

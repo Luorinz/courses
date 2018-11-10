@@ -1,0 +1,3 @@
+﻿  Question_8.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_4\question_8\question_8\question_8.cpp(20): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  Question_8.vcxproj -> C:\Users\Luori\Desktop\Courses\Tandon Bridge Courses\Week_4\Question_8\Debug\Question_8.exe

@@ -1,0 +1,17 @@
+﻿  hw10.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_10\hw10\hw10\hw10.cpp(169): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  c:\users\luori\desktop\courses\tandon bridge courses\week_10\hw10\hw10\hw10.cpp(167): note: 编译 类 模板 成员函数 "int LList<Employee>::findMax(LListNode<T> *)" 时
+          with
+          [
+              T=Employee
+          ]
+  c:\users\luori\desktop\courses\tandon bridge courses\week_10\hw10\hw10\hw10.cpp(229): note: 参见对正在编译的函数 模板 实例化“int LList<Employee>::findMax(LListNode<T> *)”的引用
+          with
+          [
+              T=Employee
+          ]
+  c:\users\luori\desktop\courses\tandon bridge courses\week_10\hw10\hw10\hw10.cpp(94): note: 编译 类 模板 成员函数 "void LList<Employee>::clear(void)" 时
+  c:\users\luori\desktop\courses\tandon bridge courses\week_10\hw10\hw10\hw10.cpp(51): note: 参见对正在编译的函数 模板 实例化“void LList<Employee>::clear(void)”的引用
+  c:\users\luori\desktop\courses\tandon bridge courses\week_10\hw10\hw10\hw10.cpp(285): note: 参见对正在编译的 类 模板 实例化 "LList<Employee>" 的引用
+c:\users\luori\desktop\courses\tandon bridge courses\week_10\hw10\hw10\hw10.cpp(209): warning C4715: “LList<Employee>::searchID”: 不是所有的控件路径都返回值
+  hw10.vcxproj -> C:\Users\Luori\Desktop\Courses\Tandon Bridge Courses\Week_10\hw10\Debug\hw10.exe

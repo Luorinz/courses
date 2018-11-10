@@ -1,0 +1,4 @@
+﻿  hw9.cpp
+c:\users\luori\desktop\courses\tandon bridge courses\week_9\hw9\hw9\hw9.cpp(218): warning C4554: “|”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+c:\users\luori\desktop\courses\tandon bridge courses\week_9\hw9\hw9\hw9.cpp(220): warning C4554: “|”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+  hw9.vcxproj -> C:\Users\Luori\Desktop\Courses\Tandon Bridge Courses\Week_9\hw9\Debug\hw9.exe

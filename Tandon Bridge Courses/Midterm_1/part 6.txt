@@ -1,0 +1,32 @@
+Write your code here. 
+Make sure to upload your file.
+
+#include <iostream>
+using namespace std;
+
+int main(){
+  //input
+  int n;
+  cout << "Please enter a positive integer greater or equal to 2:\n";
+  cin >> n; 
+
+  //Processing and output
+  for (int i = 1 ; i <= n ; i++){
+    cout << '*';
+  }
+  cout << endl;
+  for (int i = 1; i <= n-2; i++){
+    cout<<'*';
+    for (int i = 1; i <= n-2; i++){
+      cout << '#';
+    }
+    cout<<'*' << endl;
+  }
+
+  for (int i = 1 ; i <= n ; i++){
+    cout << '*';
+  }
+  cout << endl;
+
+  return 0;
+}
